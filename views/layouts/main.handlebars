@@ -1,0 +1,55 @@
+<!--Main view page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖥️🐝 TechHive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<div class="wrapper">
+    <header>
+        <h1 class=" has-text-black is-size-3 has-text-black px-5 py-4 has-text-weight-bold">
+            🖥️🐝 TECHHIVE</h1>
+        <hr><br>
+        <nav class="navbar mt-4 ">
+            {{#if loggedIn}}
+            <a href="/" class="has-background-black navbar-item is-hoverable pt-1 is-info">Homepage</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create post</a>
+            <button id="logout" class="button is-danger">Logout</button>
+            {{else}}
+            <a href="/" class="button has-background-black navbar-item is-hoverable pt-1 is-info">Homepage</a>
+            <a href="/login" class="button is-black">Login</a>
+            {{/if}}
+        </nav>
+    </header>
+
+    <main class="has-background-warning-light">
+        {{{ body }}}
+    </main>
+
+    <footer class="has-text-warning has-background-black footer rows pb-2">
+
+        <div class="row-is-full content has-text-centered">
+            <p>
+                <strong class="has-text-warning">🖥️🐝 TechHive ©2020 </strong> by <a
+                    href="https://github.com/natejonesiii">Nate Jones</a> <br>
+                Buzz:
+                <a href="https://github.com/NateJonesIII/TechHive"><i class="fab fa-github"></i></a> |
+                <a href="mailto:15nate.jones@gmail.com"><i class="far fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</div>
+
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+</body>
+
+</html>

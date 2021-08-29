@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS techhive_db;
+CREATE DATABASE techhive_db;

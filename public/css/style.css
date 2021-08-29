@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height          : 100%;
+  padding         : 0;
+  margin          : 0;
+  font-family     : sans-serif;
+  color           : rgb(0, 0, 0);
+  background-color: rgb(194, 241, 194);
+}
+
+.wrapper {
+  width         : 100%;
+  min-height    : 100%;
+  max-width     : 100%;
+  margin        : 0 auto;
+  display       : flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  font-weight    : bold;
+  color          : gold;
+}
+
+a:hover {
+  color: #004e21;
+}
+
+button {
+  border       : 0;
+  padding      : 1%;
+  font-weight  : bold;
+  transition   : background-color .1s;
+  cursor       : pointer;
+  border-radius: 5px;
+}
+
+
+
+textarea,
+input {
+  padding      : .5%;
+  border-radius: 5px;
+  border       : 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border : 1px solid #d9eb34;
+}
+
+textarea {
+  min-width : 40%;
+  min-height: 100px;
+}
+
+form>div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.bg-warning {
+  color: #ffd700;
+}
+
+header {
+  border-bottom   : 1px solid #ccc;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  padding         : 0 1%;
+  background-color: gold;
+}
+
+main {
+  flex   : 1;
+  padding: 2% 4%;
+}
+
+.btn_none {
+  background     : none;
+  border         : none;
+  padding        : 0;
+  cursor         : pointer;
+  text-decoration: none;
+  color          : #225ca3;
+  font-size      : 100%;
+  font-weight    : bold;
+  transition     : color .1s;
+  margin-left    : 16px;
+}
+
+.btn_no_style:hover {
+  background: none;
+  color     : #f57702;
+}
+
+.delete_post_btn {
+  background-color: #d41414;
+}
+
+.delete_post_btn:hover {
+  background-color: #6f00ff;
+}
+
+.post_list {
+  margin : 0;
+  padding: 0;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height  : 150%;
+}
+
+.post.title span {
+  font-style: italic;
+  font-size : 90%;
+  color     : #7d7d7d;
+}
+
+.edit_link {
+  display: block;
+  margin : -1.5% 0 2% 0;
+}
+
+.comment_form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding      : 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth_child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment.meta {
+  font-size    : 90%;
+  margin-bottom: .5%;
+  opacity      : 0.6;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  border-top     : 1px solid #ccc;
+  display        : flex;
+  justify-content: center;
+  padding        : 1%;
+  font-size      : 110%;
+
+}
+
+.card {
+  margin-bottom: 1em;
+  margin-top   : 1em;
+}
+
+.rows {
+  display         : flex;
+  flex-direction  : column;
+  background-color: rgb(216, 182, 120);
+}
+
+.navbar {
+  background-color: gold !important;
+}
+
+.card-header {
+  background-color: rgb(0, 16, 32) !important;
+  text-decoration : underline;
+  color           : gold !important;
+}
