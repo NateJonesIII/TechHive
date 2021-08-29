@@ -1,4 +1,4 @@
-# Fit-Tracker
+# TechHive
 
 ## Usage
 
@@ -6,9 +6,9 @@ This app is meant to be a demo of a CRUD app using MVC elements which allows the
 
 ## Screenshots
 
-- <img width="1125" alt="fitTracker" src="https://github.com/NateJonesIII/TechHive/blob/main/assets/HomePage.PNG?raw=true">
+- <img width="1125" alt="techHive" src="https://github.com/NateJonesIII/TechHive/blob/main/assets/HomePage.PNG?raw=true">
 
-- <img width="1125" alt="fitTracker" src="https://github.com/NateJonesIII/TechHive/blob/main/assets/Login.PNG?raw=true">
+- <img width="1125" alt="techHive" src="https://github.com/NateJonesIII/TechHive/blob/main/assets/Login.PNG?raw=true">
 
 ## Links
 
